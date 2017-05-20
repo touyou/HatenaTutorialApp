@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46102EC21ED057F800735617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EC11ED057F800735617 /* AppDelegate.swift */; };
+		46102EC41ED057F800735617 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EC31ED057F800735617 /* MasterViewController.swift */; };
+		46102EC61ED057F800735617 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EC51ED057F800735617 /* DetailViewController.swift */; };
+		46102EC91ED057F800735617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46102EC71ED057F800735617 /* Main.storyboard */; };
+		46102ECB1ED057F800735617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46102ECA1ED057F800735617 /* Assets.xcassets */; };
+		46102ECE1ED057F800735617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46102ECC1ED057F800735617 /* LaunchScreen.storyboard */; };
+		46102ED91ED057F800735617 /* HatenaTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102ED81ED057F800735617 /* HatenaTutorialTests.swift */; };
+		46102EE41ED057F900735617 /* HatenaTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EE31ED057F900735617 /* HatenaTutorialUITests.swift */; };
+		46102EF71ED05F4400735617 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EF61ED05F4400735617 /* JSONObject.swift */; };
+		46102EF91ED061B300735617 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EF81ED061B300735617 /* User.swift */; };
+		46102EFC1ED0646400735617 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EFB1ED0646400735617 /* Repository.swift */; };
+		46102F001ED0675B00735617 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102EFF1ED0675B00735617 /* DateHelper.swift */; };
+		46102F021ED0697200735617 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102F011ED0697200735617 /* SearchResult.swift */; };
+		46102F041ED06A6800735617 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102F031ED06A6800735617 /* API.swift */; };
+		46102F071ED0727E00735617 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102F061ED0727E00735617 /* GitHubAPI.swift */; };
+		46102F0A1ED0841800735617 /* Foundation+JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46102F091ED0841800735617 /* Foundation+JSONConvertible.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46102ED51ED057F800735617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46102EB61ED057F800735617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46102EBD1ED057F800735617;
+			remoteInfo = HatenaTutorial;
+		};
+		46102EE01ED057F900735617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46102EB61ED057F800735617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46102EBD1ED057F800735617;
+			remoteInfo = HatenaTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46102EBE1ED057F800735617 /* HatenaTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HatenaTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46102EC11ED057F800735617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46102EC31ED057F800735617 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		46102EC51ED057F800735617 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		46102EC81ED057F800735617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46102ECA1ED057F800735617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46102ECD1ED057F800735617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46102ECF1ED057F800735617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46102ED41ED057F800735617 /* HatenaTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatenaTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46102ED81ED057F800735617 /* HatenaTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatenaTutorialTests.swift; sourceTree = "<group>"; };
+		46102EDA1ED057F900735617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46102EDF1ED057F900735617 /* HatenaTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HatenaTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46102EE31ED057F900735617 /* HatenaTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatenaTutorialUITests.swift; sourceTree = "<group>"; };
+		46102EE51ED057F900735617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46102EF61ED05F4400735617 /* JSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONObject.swift; sourceTree = "<group>"; };
+		46102EF81ED061B300735617 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		46102EFB1ED0646400735617 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		46102EFF1ED0675B00735617 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		46102F011ED0697200735617 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		46102F031ED06A6800735617 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		46102F061ED0727E00735617 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		46102F091ED0841800735617 /* Foundation+JSONConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+JSONConvertible.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46102EBB1ED057F800735617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46102ED11ED057F800735617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46102EDC1ED057F900735617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46102EB51ED057F800735617 = {
+			isa = PBXGroup;
+			children = (
+				46102EC01ED057F800735617 /* HatenaTutorial */,
+				46102ED71ED057F800735617 /* HatenaTutorialTests */,
+				46102EE21ED057F900735617 /* HatenaTutorialUITests */,
+				46102EBF1ED057F800735617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46102EBF1ED057F800735617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46102EBE1ED057F800735617 /* HatenaTutorial.app */,
+				46102ED41ED057F800735617 /* HatenaTutorialTests.xctest */,
+				46102EDF1ED057F900735617 /* HatenaTutorialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46102EC01ED057F800735617 /* HatenaTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				46102F051ED06B6400735617 /* API */,
+				46102EF51ED05EF400735617 /* Asset */,
+				46102F081ED083F300735617 /* Extension */,
+				46102EFD1ED0673100735617 /* Helper */,
+				46102EF11ED058C600735617 /* Model */,
+				46102EF21ED058FF00735617 /* Protocol */,
+				46102EF41ED05EC900735617 /* System */,
+				46102EF31ED05EC100735617 /* ViewController */,
+			);
+			path = HatenaTutorial;
+			sourceTree = "<group>";
+		};
+		46102ED71ED057F800735617 /* HatenaTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				46102ED81ED057F800735617 /* HatenaTutorialTests.swift */,
+				46102EDA1ED057F900735617 /* Info.plist */,
+			);
+			path = HatenaTutorialTests;
+			sourceTree = "<group>";
+		};
+		46102EE21ED057F900735617 /* HatenaTutorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46102EE31ED057F900735617 /* HatenaTutorialUITests.swift */,
+				46102EE51ED057F900735617 /* Info.plist */,
+			);
+			path = HatenaTutorialUITests;
+			sourceTree = "<group>";
+		};
+		46102EF11ED058C600735617 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46102EF61ED05F4400735617 /* JSONObject.swift */,
+				46102EFB1ED0646400735617 /* Repository.swift */,
+				46102F011ED0697200735617 /* SearchResult.swift */,
+				46102EF81ED061B300735617 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46102EF21ED058FF00735617 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				46102F031ED06A6800735617 /* API.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		46102EF31ED05EC100735617 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46102EC51ED057F800735617 /* DetailViewController.swift */,
+				46102EC71ED057F800735617 /* Main.storyboard */,
+				46102EC31ED057F800735617 /* MasterViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		46102EF41ED05EC900735617 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				46102EC11ED057F800735617 /* AppDelegate.swift */,
+				46102ECF1ED057F800735617 /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		46102EF51ED05EF400735617 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				46102ECA1ED057F800735617 /* Assets.xcassets */,
+				46102ECC1ED057F800735617 /* LaunchScreen.storyboard */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		46102EFD1ED0673100735617 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				46102EFF1ED0675B00735617 /* DateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		46102F051ED06B6400735617 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				46102F061ED0727E00735617 /* GitHubAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		46102F081ED083F300735617 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46102F091ED0841800735617 /* Foundation+JSONConvertible.swift */,
+			);
+			name = Extension;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46102EBD1ED057F800735617 /* HatenaTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46102EE81ED057F900735617 /* Build configuration list for PBXNativeTarget "HatenaTutorial" */;
+			buildPhases = (
+				46102EBA1ED057F800735617 /* Sources */,
+				46102EBB1ED057F800735617 /* Frameworks */,
+				46102EBC1ED057F800735617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HatenaTutorial;
+			productName = HatenaTutorial;
+			productReference = 46102EBE1ED057F800735617 /* HatenaTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46102ED31ED057F800735617 /* HatenaTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46102EEB1ED057F900735617 /* Build configuration list for PBXNativeTarget "HatenaTutorialTests" */;
+			buildPhases = (
+				46102ED01ED057F800735617 /* Sources */,
+				46102ED11ED057F800735617 /* Frameworks */,
+				46102ED21ED057F800735617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46102ED61ED057F800735617 /* PBXTargetDependency */,
+			);
+			name = HatenaTutorialTests;
+			productName = HatenaTutorialTests;
+			productReference = 46102ED41ED057F800735617 /* HatenaTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46102EDE1ED057F900735617 /* HatenaTutorialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46102EEE1ED057F900735617 /* Build configuration list for PBXNativeTarget "HatenaTutorialUITests" */;
+			buildPhases = (
+				46102EDB1ED057F900735617 /* Sources */,
+				46102EDC1ED057F900735617 /* Frameworks */,
+				46102EDD1ED057F900735617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46102EE11ED057F900735617 /* PBXTargetDependency */,
+			);
+			name = HatenaTutorialUITests;
+			productName = HatenaTutorialUITests;
+			productReference = 46102EDF1ED057F900735617 /* HatenaTutorialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46102EB61ED057F800735617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = touyou;
+				TargetAttributes = {
+					46102EBD1ED057F800735617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B4S4333JDW;
+						ProvisioningStyle = Automatic;
+					};
+					46102ED31ED057F800735617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B4S4333JDW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46102EBD1ED057F800735617;
+					};
+					46102EDE1ED057F900735617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = B4S4333JDW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 46102EBD1ED057F800735617;
+					};
+				};
+			};
+			buildConfigurationList = 46102EB91ED057F800735617 /* Build configuration list for PBXProject "HatenaTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46102EB51ED057F800735617;
+			productRefGroup = 46102EBF1ED057F800735617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46102EBD1ED057F800735617 /* HatenaTutorial */,
+				46102ED31ED057F800735617 /* HatenaTutorialTests */,
+				46102EDE1ED057F900735617 /* HatenaTutorialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46102EBC1ED057F800735617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46102ECE1ED057F800735617 /* LaunchScreen.storyboard in Resources */,
+				46102ECB1ED057F800735617 /* Assets.xcassets in Resources */,
+				46102EC91ED057F800735617 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46102ED21ED057F800735617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46102EDD1ED057F900735617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46102EBA1ED057F800735617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46102EF71ED05F4400735617 /* JSONObject.swift in Sources */,
+				46102F0A1ED0841800735617 /* Foundation+JSONConvertible.swift in Sources */,
+				46102F071ED0727E00735617 /* GitHubAPI.swift in Sources */,
+				46102EC61ED057F800735617 /* DetailViewController.swift in Sources */,
+				46102F021ED0697200735617 /* SearchResult.swift in Sources */,
+				46102EC41ED057F800735617 /* MasterViewController.swift in Sources */,
+				46102EF91ED061B300735617 /* User.swift in Sources */,
+				46102EC21ED057F800735617 /* AppDelegate.swift in Sources */,
+				46102F001ED0675B00735617 /* DateHelper.swift in Sources */,
+				46102F041ED06A6800735617 /* API.swift in Sources */,
+				46102EFC1ED0646400735617 /* Repository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46102ED01ED057F800735617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46102ED91ED057F800735617 /* HatenaTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46102EDB1ED057F900735617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46102EE41ED057F900735617 /* HatenaTutorialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46102ED61ED057F800735617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46102EBD1ED057F800735617 /* HatenaTutorial */;
+			targetProxy = 46102ED51ED057F800735617 /* PBXContainerItemProxy */;
+		};
+		46102EE11ED057F900735617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46102EBD1ED057F800735617 /* HatenaTutorial */;
+			targetProxy = 46102EE01ED057F900735617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46102EC71ED057F800735617 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46102EC81ED057F800735617 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		46102ECC1ED057F800735617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46102ECD1ED057F800735617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46102EE61ED057F900735617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46102EE71ED057F900735617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46102EE91ED057F900735617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4S4333JDW;
+				INFOPLIST_FILE = HatenaTutorial/System/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.HatenaTutorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		46102EEA1ED057F900735617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4S4333JDW;
+				INFOPLIST_FILE = HatenaTutorial/System/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.HatenaTutorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		46102EEC1ED057F900735617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B4S4333JDW;
+				INFOPLIST_FILE = HatenaTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.HatenaTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HatenaTutorial.app/HatenaTutorial";
+			};
+			name = Debug;
+		};
+		46102EED1ED057F900735617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B4S4333JDW;
+				INFOPLIST_FILE = HatenaTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.HatenaTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HatenaTutorial.app/HatenaTutorial";
+			};
+			name = Release;
+		};
+		46102EEF1ED057F900735617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B4S4333JDW;
+				INFOPLIST_FILE = HatenaTutorialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.HatenaTutorialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HatenaTutorial;
+			};
+			name = Debug;
+		};
+		46102EF01ED057F900735617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = B4S4333JDW;
+				INFOPLIST_FILE = HatenaTutorialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.HatenaTutorialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HatenaTutorial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46102EB91ED057F800735617 /* Build configuration list for PBXProject "HatenaTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46102EE61ED057F900735617 /* Debug */,
+				46102EE71ED057F900735617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46102EE81ED057F900735617 /* Build configuration list for PBXNativeTarget "HatenaTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46102EE91ED057F900735617 /* Debug */,
+				46102EEA1ED057F900735617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46102EEB1ED057F900735617 /* Build configuration list for PBXNativeTarget "HatenaTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46102EEC1ED057F900735617 /* Debug */,
+				46102EED1ED057F900735617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46102EEE1ED057F900735617 /* Build configuration list for PBXNativeTarget "HatenaTutorialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46102EEF1ED057F900735617 /* Debug */,
+				46102EF01ED057F900735617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46102EB61ED057F800735617 /* Project object */;
+}
